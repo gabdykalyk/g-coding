@@ -23,3 +23,25 @@
         margin: 40px auto 0;
     }
 }
+
+@media only screen and (max-width:600px) {
+    .why__item {
+        width: 75%;
+        margin: 30px auto 0;
+    }
+
+    .footer__container {
+        flex-wrap: wrap;
+    }
+
+    .footer__item {
+        margin: 0;
+        margin-top: 30px;
+        width: 75%;
+        text-align: center;
+    }
+
+    .footer__link {
+        justify-content: center;
+    }
+}
