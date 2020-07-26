@@ -27,6 +27,7 @@
                 <li class="nav__item"><a class="nav__link" href="#general">Главная</a></li>
                 <li class="nav__item"><a class="nav__link" href="#programming">Программирование</a></li>
                 <li class="nav__item"><a class="nav__link" href="#courses">Наши курсы</a></li>
+                <li class="nav__item"><a class="nav__link" href="#form">Оставить заявку</a></li>
                 <li class="nav__item"><a class="nav__link" href="#contacts">Контакты</a></li>
             </ul>
         </div>
@@ -40,11 +41,11 @@
                     <nav class="nav">
                         <ul class="nav__main">
                             
-                            <li class="nav__item"><a class="nav__link" href="#general">Главная</a></li>
-                            
-                            <li class="nav__item"><a class="nav__link" href="#programming">Программирование</a></li>
-                            <li class="nav__item"><a class="nav__link" href="#courses">Наши курсы</a></li> 
-                            <li class="nav__item"><a class="nav__link" href="#contacts">Контакты</a></li>
+                            <a class="nav__link" href="#general"><li class="nav__item">Главная</li></a>
+                            <a class="nav__link" href="#programming"><li class="nav__item">Программирование</li></a>
+                            <a class="nav__link" href="#courses"><li class="nav__item">Наши курсы</li></a>
+                            <a class="nav__link" href="#form"><li class="nav__item">Оставить заявку</li></a>
+                            <a class="nav__link" href="#contacts"><li class="nav__item">Контакты</li></a>
                         </ul>
                     </nav>
                 </div>
@@ -326,6 +327,31 @@
         </div>
     </div>
     </section>
+    <div class="form" id="form">
+        <div class="container">
+            <div class="form__title">
+                Оставьте заявку и мы с вами свяжемся
+            </div>
+            <form class="form__main" action="https://formspree.io/moqkyywy" method="POST">
+                <label for="">
+                    <input type="text" name="name" placeholder="Ваше имя"  required>
+                    <input type="text" name="kidName" placeholder="Имя ребёнка" required>
+                    <input type="number" name="kidAge" placeholder="Возраст ребёнка" required>
+                    <input type="tel" name="tel" placeholder="Ваш номер телефона" required>
+                    <select name="contact" required class="form-control form__select" id="exampleFormControlSelect1">
+                        <option value="" selected disabled>Как с вами удобнее связаться</option>
+                        <option value="Whatsapp">Whatsapp</option>
+                        <option value="Telegram">Telegram</option>
+                        <option value="Instagram">Instagram</option>
+                        <option value="Звонок на телефон">Звонок на телефон</option>
+                    </select>
+                    <div class="form__button">
+                        <button class="btn btn-primary btn-lg" type="submit" value="send">Отправить</button>
+                    </div>
+                </label>
+            </form>
+        </div>
+    </div>
     <footer class="footer" id="contacts">
         <div class="container footer__container">
             <div class="footer__item">
@@ -412,7 +438,6 @@
             (c) 2020. Все права защищены.
         </div>
     </footer>
-
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
