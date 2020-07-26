@@ -1443,6 +1443,8 @@ template {
   bottom: 100%;
   left: 0;
   transition: all 0.3s linear; }
+  .back ul li {
+    margin-bottom: 40px; }
 
 .active {
   bottom: unset;
