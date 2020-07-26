@@ -306,13 +306,19 @@ template {
 .banner {
   background-image: url("../public/banner.jpg");
   background-repeat: no-repeat;
-  background-size: color;
+  background-size: cover;
   min-height: 100vh; }
   .banner .nav__link {
     text-decoration: none;
     color: #ffffff; }
   .banner .header {
-    border-bottom: 1px solid #A1A1A1; }
+    border-bottom: 1px solid #A1A1A1;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 50; }
     .banner .header .container {
       display: flex;
       justify-content: space-between;
@@ -320,6 +326,8 @@ template {
     .banner .header .logo {
       display: flex;
       align-items: center; }
+      .banner .header .logo img {
+        border-radius: 50%; }
       .banner .header .logo img {
         width: 80px; }
     .banner .header .nav__main {
@@ -338,7 +346,7 @@ template {
   .banner .title {
     color: #ffff;
     text-align: center;
-    margin-top: 150px; }
+    padding-top: 150px; }
     .banner .title__main {
       font-weight: 500; }
     .banner .title__text {
@@ -363,7 +371,7 @@ template {
   background: #4e676b;
   padding-top: 50px;
   color: #ffffff;
-  padding-bottom: 100px; }
+  padding-bottom: 50px; }
 
 .courses {
   margin-top: 110px;
@@ -377,18 +385,18 @@ template {
   .courses__main {
     margin-top: 50px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between; }
   .courses__item {
     padding: 30px;
     background: #465a5d;
-    width: 33%;
+    width: 31%;
     border: 2px solid #ffffff;
     border-radius: 30px;
-    transition: background 0.2s linear; }
+    transition: background 0.2s linear;
+    margin-bottom: 40px; }
     .courses__item:hover {
       background: #8fa1a5; }
-    .courses__item:not(:last-child) {
-      margin-right: 40px; }
     .courses__item .courses__icon {
       height: 150px; }
     .courses__item .courses__name {
@@ -411,15 +419,18 @@ template {
 
 .why {
   text-align: center;
-  margin-top: 110px;
+  padding-top: 110px;
   padding-bottom: 100px; }
+  .why__item {
+    width: 33%;
+    margin-top: 80px; }
   .why__title {
     font-size: 36px;
     font-weight: 700; }
   .why__icon {
     width: 80px; }
   .why__main {
-    margin-top: 100px; }
+    margin-top: 50px; }
   .why__text {
     margin-top: 25px; }
 
@@ -460,6 +471,12 @@ template {
     color: #999999;
     padding-bottom: 30px; }
 
+@media only screen and (max-width: 1024px) {
+  .courses__item {
+    width: 48%; }
+
+  .courses__name {
+    white-space: nowrap; } }
 *,
 *::before,
 *::after {

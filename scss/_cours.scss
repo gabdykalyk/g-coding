@@ -2,7 +2,7 @@
     background: #4e676b;
     padding-top: 50px;
      color: #ffffff;
-     padding-bottom: 100px;
+     padding-bottom: 50px;
 }
 
 .courses {
@@ -21,24 +21,23 @@
     &__main {
         margin-top: 50px;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
     }
 
     &__item {
         padding: 30px;
         background: #465a5d;
-        width: 33%;
+        width: 31%;
         border: 2px solid #ffffff;
         border-radius: 30px;
         transition: background 0.2s linear;
+        margin-bottom: 40px;
 
         &:hover {
             background: #8fa1a5;
         }
 
-        &:not(:last-child) {
-                   margin-right: 40px;
-        }
 
         .courses__icon {
             

@@ -1,7 +1,12 @@
 .why {
     text-align: center;
-    margin-top: 110px;
+    padding-top: 110px;
     padding-bottom: 100px;
+
+    &__item {
+        width: 33%;
+        margin-top: 80px;
+    }
 
     &__title {
         font-size: 36px;
@@ -13,7 +18,7 @@
     }
 
     &__main {
-        margin-top: 100px;
+        margin-top: 50px;
     }
 
     &__text {
