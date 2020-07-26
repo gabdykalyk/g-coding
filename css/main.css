@@ -477,6 +477,17 @@ template {
 
   .courses__name {
     white-space: nowrap; } }
+@media only screen and (max-width: 768px) {
+  .why__main {
+    display: flex;
+    justify-content: space-between; }
+
+  .why__item {
+    width: 45%; }
+
+  .courses__item {
+    width: 80%;
+    margin: 40px auto 0; } }
 *,
 *::before,
 *::after {
