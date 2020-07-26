@@ -21,7 +21,6 @@
         .container {
             display: flex;
             justify-content: space-between;
-            min-height: 100px;
         }
 
         .logo {
@@ -33,7 +32,7 @@
             }
 
             img {
-                width: 80px;
+                width: 60px;
             }
         }
 
@@ -47,7 +46,7 @@
             }
 
             &__item {
-                padding: 40px 20px;
+                padding: 20px 20px;
                 border-bottom: 2px solid rgba(255, 255, 255, 0);
                 transition: border-bottom 0.2s linear;
                 cursor: pointer;

@@ -321,15 +321,14 @@ template {
     z-index: 50; }
     .banner .header .container {
       display: flex;
-      justify-content: space-between;
-      min-height: 100px; }
+      justify-content: space-between; }
     .banner .header .logo {
       display: flex;
       align-items: center; }
       .banner .header .logo img {
         border-radius: 50%; }
       .banner .header .logo img {
-        width: 80px; }
+        width: 60px; }
     .banner .header .nav__main {
       display: flex;
       align-items: center;
@@ -337,7 +336,7 @@ template {
       margin-bottom: 0;
       font-weight: 500; }
     .banner .header .nav__item {
-      padding: 40px 20px;
+      padding: 20px 20px;
       border-bottom: 2px solid rgba(255, 255, 255, 0);
       transition: border-bottom 0.2s linear;
       cursor: pointer; }
