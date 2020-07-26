@@ -34,7 +34,7 @@
         flex-wrap: wrap;
     }
 
-    .footer__item {
+    .container .footer__item {
         margin: 0;
         margin-top: 30px;
         width: 75%;
@@ -44,4 +44,31 @@
     .footer__link {
         justify-content: center;
     }
+
+    .banner .title__text {
+        font-size: 30px;
+    }
+
+    .header {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .why__title {
+        font-size: 18px;
+    }
+
+    .courses__name {
+        white-space: normal;
+    }
+
+    .banner .title__text {
+        font-size: 18px;
+    }
+
+    .banner {
+        min-height: 70vh;
+    }
+    
 }
