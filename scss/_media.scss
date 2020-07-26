@@ -22,6 +22,15 @@
         width: 80%;
         margin: 40px auto 0;
     }
+
+    .header {
+        display: none;
+    }
+
+    .ham-btn {
+        display: block;
+        background: rgba(0, 0, 0, .5);
+    }
 }
 
 @media only screen and (max-width:600px) {
@@ -49,9 +58,6 @@
         font-size: 30px;
     }
 
-    .header {
-        display: none;
-    }
 }
 
 @media only screen and (max-width:450px) {
@@ -69,6 +75,10 @@
 
     .banner {
         min-height: 70vh;
+    }
+
+    .back ul li {
+        font-size: 18px;
     }
     
 }
