@@ -16,10 +16,12 @@ let close = document.querySelector('#close')
 close.addEventListener('click', (event) => {
     event.stopPropagation()
     setTimeout(escape(ad), 1000)
+    body.classList.toggle('lock')
 })
 
 let btnLink = document.querySelector('.btn__link')
 btnLink.addEventListener('click', (event) => {
     event.stopPropagation()
     setTimeout(escape(ad), 1000)
+    body.classList.toggle('lock')
 })
