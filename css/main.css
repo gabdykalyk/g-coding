@@ -1353,6 +1353,21 @@ template {
 
   .back ul li {
     font-size: 18px; } }
+@media only screen and (max-width: 1300px) {
+  .ad .ad__block .ad__title {
+    font-size: 18px; }
+
+  .ad .ad__block {
+    width: 70%; }
+
+  .ad .ad__block .btn__link .btn__main {
+    font-size: 18px; } }
+@media only screen and (max-width: 410px) {
+  .ad .ad__block .ad__title {
+    font-size: 14px; }
+
+  .ad .ad__block .btn__link .btn__main {
+    font-size: 14px; } }
 /*!
  * Hamburgers
  * @description Tasty CSS-animated hamburgers
@@ -1474,6 +1489,43 @@ template {
     margin-top: 20px;
     display: flex;
     justify-content: center; }
+
+.ad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3); }
+  .ad__block {
+    background-color: #ffffff;
+    width: 40%;
+    height: 40vh;
+    border-radius: 10px;
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative; }
+    .ad__block .ad__title {
+      font-size: 25px;
+      text-align: center;
+      font-weight: 700; }
+  .ad .btn__link {
+    margin-top: 20px; }
+  .ad .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 30px;
+    cursor: pointer; }
+
+.escape {
+  display: none; }
 
 *,
 *::before,
