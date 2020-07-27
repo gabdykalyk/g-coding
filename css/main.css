@@ -1358,16 +1358,10 @@ template {
     font-size: 18px; }
 
   .ad .ad__block {
-    width: 70%; }
+    width: 85%; }
 
   .ad .ad__block .btn__link .btn__main {
     font-size: 18px; } }
-@media only screen and (max-width: 410px) {
-  .ad .ad__block .ad__title {
-    font-size: 14px; }
-
-  .ad .ad__block .btn__link .btn__main {
-    font-size: 14px; } }
 /*!
  * Hamburgers
  * @description Tasty CSS-animated hamburgers
